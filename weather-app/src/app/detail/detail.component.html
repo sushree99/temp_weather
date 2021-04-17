@@ -1,0 +1,10 @@
+<div class="card" style="display: inline-block" *ngFor="let data of detailData">
+    <div class="card-body" style="font-size: 13px;">
+      <h5 class="card-title">{{data.time | date : 'shortTime'}}</h5>
+      <div>Feels like: {{data.feels_like}} <span>&#8451;</span></div>
+      <div>{{data.description}}</div>
+      <div>Min: {{data.min}}</div>
+      <div>Max: {{data.max}}</div>
+      <div>Humidity: {{data.humidity}}</div>
+    </div>
+  </div>
